@@ -174,11 +174,11 @@ int main()
 
     if(NodeOrder!=10)
     {
-        printf("Graf, complete graf degil!\n(Her bir dugum diger butun dugumlere bagli degil)\n");
+        printf("The Graph isn't a complete!\n(Each node doesn't have edge with all of other node)\n");
     }
     else
     {
-        printf("Graf, complete graftir!\n");
+        printf("The Graf is a complete!\n");
     }
 
     destroyGraph(undir_graph);
