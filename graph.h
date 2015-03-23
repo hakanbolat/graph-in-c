@@ -1,3 +1,9 @@
+/*graph.h*/
+#ifndef _GRAPH_H_
+#define _GRAPH_H_
+
+typedef enum {UNDIRECTED=0,DIRECTED} graph_type_e;
+
 /* Adjacency list node*/
 typedef struct adjlist_node
 {
