@@ -105,7 +105,7 @@ void displayGraph(graph_p graph)
 int main()
 {
     int i=0,j=0;
-    int TotalEdge=0;
+    int TotalEdge=0,NodeOrder=0;
     int matrix[5][5];
     FILE *fp;//file read
 
@@ -150,13 +150,13 @@ int main()
     else
     {
         adjlist_node_p adjListPtr = undir_graph->adjListArr[i].head;
-        j=0;
+
         while (adjListPtr)
         {
             adjListPtr = adjListPtr->next;
-            j++;
+            NodeOrder++;
         }
-    printf("\nOrder of %d.Node=%d\n",i,j);
+    printf("\nOrder of %d.Node = %d\n",i,NodeOrder);
     }
 
 
@@ -170,7 +170,16 @@ int main()
         }
     }
 
-    printf("\nGraph total edge is=%d",TotalEdge/2);//each edge have two direction
+    printf("\nGraph total edge is=%d\n\n",TotalEdge/2);//each edge have two direction
+
+    if(NodeOrder!=10)
+    {
+        printf("Graf, complete graf degil!\n(Her bir dugum diger butun dugumlere bagli degil)\n");
+    }
+    else
+    {
+        printf("Graf, complete graftir!\n");
+    }
 
     destroyGraph(undir_graph);
     getch();
