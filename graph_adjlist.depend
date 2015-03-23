@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1427072681 source:d:\c project\graph_adjlist\main.c
+	<stdio.h>
+	<stdlib.h>
+	"graph.h"
+
+1427058782 d:\c project\graph_adjlist\graph.h
+
