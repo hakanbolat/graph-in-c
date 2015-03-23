@@ -156,7 +156,7 @@ int main()
             adjListPtr = adjListPtr->next;
             j++;
         }
-    printf("\n%d.Vertex degree is=%d\n",i,j);
+    printf("\nOrder of %d.Node=%d\n",i,j);
     }
 
 
